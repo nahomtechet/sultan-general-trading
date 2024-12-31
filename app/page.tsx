@@ -19,25 +19,40 @@ import {
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        <section className="bg-[#1a365d] text-white py-20">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
-              Welcome to Sultan General Trading
-            </h1>
-            <p className="text-xl mb-8 animate-fade-in-up">
-              Your trusted partner in exporting high-quality Ethiopian products
-            </p>
-            <Button
-              asChild
-              className="animate-bounce bg-white text-[#1a365d] hover:bg-gray-100"
-            >
-              <Link href="/products">Explore Our Products</Link>
-            </Button>
-          </div>
-        </section>
+  <Header /> 
 
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/VID-20241231-WA0072.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+      </div> 
+
+      <main className="relative z-10 flex-grow">
+        <section className="text-white py-20">
+          <div className="container mx-auto px-6 text-center">
+            <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
+              Welcome to Sultan General Trading
+            </h1>
+            <p className="text-xl mb-8 animate-fade-in-up">
+              Your trusted partner in exporting high-quality Ethiopian products
+            </p>
+            <Button
+              asChild
+              className="animate-bounce bg-white text-[#1a365d] hover:bg-gray-100"
+            >
+              <Link href="/products">Explore Our Products</Link>
+            </Button>
+          </div>
+        </section>
         <section className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold mb-12 text-center">
