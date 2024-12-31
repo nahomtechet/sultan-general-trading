@@ -1,7 +1,7 @@
 import { Header } from "../../components/header"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Globe, BarChartIcon as ChartBar, Handshake, TrendingUp, Truck } from "lucide-react"
+import {  Globe, BarChartIcon as ChartBar, Handshake, TrendingUp } from "lucide-react"
 
 export default function Services() {
   return (

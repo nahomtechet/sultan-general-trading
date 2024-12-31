@@ -132,7 +132,7 @@ export default function Home() {
               <div className="text-center">
                 <TrendingUp className="h-16 w-16 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold mb-2">Economic Growth</h3>
-                <p>Supporting Ethiopian producers and contributing to the country's economic development</p>
+                <p>Supporting Ethiopian producers and contributing to the country&apos;s economic development</p>
               </div>
               <div className="text-center">
                 <Users className="h-16 w-16 mx-auto mb-4" />
