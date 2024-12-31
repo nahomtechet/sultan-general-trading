@@ -1,17 +1,31 @@
-import { Header } from "../../components/header"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import {  Globe, BarChartIcon as ChartBar, Handshake, TrendingUp } from "lucide-react"
+import { Header } from "../../components/header";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Globe,
+  BarChartIcon as ChartBar,
+  Handshake,
+  TrendingUp,
+} from "lucide-react";
+import { ShieldCheck, Users, BarChart, Package } from "lucide-react";
 
 export default function Services() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-blue-600 text-white py-20">
+        <section className="bg-[#1a365d] text-white py-20">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-            <p className="text-xl">Comprehensive Solutions for International Trade</p>
+            <p className="text-xl">
+              Comprehensive Solutions for International Trade
+            </p>
           </div>
         </section>
         <section className="py-20">
@@ -23,7 +37,9 @@ export default function Services() {
                     <Globe className="h-6 w-6" />
                     Import/Export Facilitation
                   </CardTitle>
-                  <CardDescription>Streamlining international trade processes</CardDescription>
+                  <CardDescription>
+                    Streamlining international trade processes
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2">
@@ -40,7 +56,9 @@ export default function Services() {
                     <ChartBar className="h-6 w-6" />
                     Market Research and Analysis
                   </CardTitle>
-                  <CardDescription>In-depth insights for informed decisions</CardDescription>
+                  <CardDescription>
+                    In-depth insights for informed decisions
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2">
@@ -57,7 +75,9 @@ export default function Services() {
                     <Handshake className="h-6 w-6" />
                     Business Development
                   </CardTitle>
-                  <CardDescription>Expanding your business globally</CardDescription>
+                  <CardDescription>
+                    Expanding your business globally
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2">
@@ -74,7 +94,9 @@ export default function Services() {
                     <TrendingUp className="h-6 w-6" />
                     Strategic Consulting
                   </CardTitle>
-                  <CardDescription>Expert guidance for international success</CardDescription>
+                  <CardDescription>
+                    Expert guidance for international success
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2">
@@ -90,14 +112,40 @@ export default function Services() {
         </section>
         <section className="bg-gray-100 py-20">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-8">Our Expertise</h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Badge className="text-lg py-2 px-4">Ethiopian Markets</Badge>
-              <Badge className="text-lg py-2 px-4">European Trade</Badge>
-              <Badge className="text-lg py-2 px-4">African Economic Community</Badge>
-              <Badge className="text-lg py-2 px-4">Cross-Cultural Business</Badge>
-              <Badge className="text-lg py-2 px-4">Emerging Markets</Badge>
-              <Badge className="text-lg py-2 px-4">Supply Chain Optimization</Badge>
+            <h2 className="text-3xl font-bold mb-8 text-[#1a365d]">
+              Our Expertise
+            </h2>
+            <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex items-center space-x-2 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                <Globe className="text-[#1a365d] h-8 w-8" />
+                <span className="text-lg font-semibold">Ethiopian Markets</span>
+              </div>
+              <div className="flex items-center space-x-2 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                <TrendingUp className="text-[#1a365d] h-8 w-8" />
+                <span className="text-lg font-semibold">European Trade</span>
+              </div>
+              <div className="flex items-center space-x-2 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                <ShieldCheck className="text-[#1a365d] h-8 w-8" />
+                <span className="text-lg font-semibold">
+                  African Economic Community
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                <Users className="text-[#1a365d] h-8 w-8" />
+                <span className="text-lg font-semibold">
+                  Cross-Cultural Business
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                <BarChart className="text-[#1a365d] h-8 w-8" />
+                <span className="text-lg font-semibold">Emerging Markets</span>
+              </div>
+              <div className="flex items-center space-x-2 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
+                <Package className="text-[#1a365d] h-8 w-8" />
+                <span className="text-lg font-semibold">
+                  Supply Chain Optimization
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -108,6 +156,5 @@ export default function Services() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-

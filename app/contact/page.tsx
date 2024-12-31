@@ -1,15 +1,16 @@
-import { Header } from '../../components/header'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Header } from "../../components/header";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Phone, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-blue-600 text-white py-20">
+        <section className="bg-[#1a365d] text-white py-20">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
             <p className="text-xl">Get in touch with Sultan General Trading</p>
@@ -22,16 +23,35 @@ export default function Contact() {
                 <h2 className="text-3xl font-bold mb-6">Send us a message</h2>
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Name
+                    </label>
                     <Input id="name" placeholder="Your name" />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Email
+                    </label>
                     <Input id="email" type="email" placeholder="Your email" />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                    <Textarea id="message" placeholder="Your message" rows={4} />
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      placeholder="Your message"
+                      rows={4}
+                    />
                   </div>
                   <Button type="submit">Send Message</Button>
                 </form>
@@ -41,22 +61,35 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <MapPin className="h-6 w-6 text-blue-600 mr-2" />
-                    <p>Bole, Sub-city, Woreda 1, Kebele 02, H.N-00, Addis Ababa, Ethiopia</p>
+                    <p>
+                      Bole, Sub-city, Woreda 1, Kebele 02, H.N-00, Addis Ababa,
+                      Ethiopia
+                    </p>
                   </div>
-                  <div className="flex items-center">
+                    <div className="flex items-center">
                     <Phone className="h-6 w-6 text-blue-600 mr-2" />
                     <p>+251915042639</p>
-                  </div>
+                    </div>
                   <div className="flex items-center">
-                    <Mail className="h-6 w-6 text-blue-600 mr-2" />
-                    <p>mukhtarmahamud1@gmail.com</p>
+                    <Link
+                      href="mailto:mukhtarmahamud1@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="flex items-center">
+                        <Mail className="h-6 w-6 text-blue-600 mr-2" />
+                        <p>mukhtarmahamud1@gmail.com</p>
+                      </div>
+                    </Link>
                   </div>
-                </div>
-                <div className="mt-8">
-                  <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
-                  <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                  <p>Saturday: 10:00 AM - 2:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <div className="mt-8">
+                    <h3 className="text-xl font-semibold mb-4">
+                      Business Hours
+                    </h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -69,6 +102,5 @@ export default function Contact() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-

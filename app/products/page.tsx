@@ -1,47 +1,54 @@
-import { Header } from '../../components/header'
-import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Header } from "../../components/header";
+import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Award, Leaf, Globe } from "lucide-react";
 
 export default function Products() {
   const products = [
     {
       name: "Premium Ethiopian Coffee",
-      description: "Aromatic and rich, sourced from Ethiopia's finest coffee regions. Available in various roasts and grinds.",
+      description:
+        "Aromatic and rich, sourced from Ethiopia's finest coffee regions. Available in various roasts and grinds.",
       image: "/coffee.png",
-      categories: ["Beverages", "Gourmet"]
+      categories: ["Beverages", "Gourmet"],
     },
     {
       name: "Organic Honey",
-      description: "Pure, natural honey from the pristine highlands of Ethiopia. Known for its unique flavor and health benefits.",
-      image: "/honey.jpg",
-      categories: ["Natural Products", "Health Foods"]
+      description:
+        "Pure, natural honey from the pristine highlands of Ethiopia. Known for its unique flavor and health benefits.",
+      image: "/rb_9045.png",
+      categories: ["Natural Products", "Health Foods"],
     },
     {
       name: "Handwoven Textiles",
-      description: "Exquisite, traditionally crafted fabrics showcasing Ethiopian artistry. Perfect for home decor and fashion.",
-      image: "/placeholder.svg?height=300&width=400",
-      categories: ["Handicrafts", "Home Decor"]
+      description:
+        "Exquisite, traditionally crafted fabrics showcasing Ethiopian artistry. Perfect for home decor and fashion.",
+      image: "/carpets-market-morocco.jpg",
+      categories: ["Handicrafts", "Home Decor"],
     },
     {
       name: "Teff Flour",
-      description: "Gluten-free, nutrient-rich flour made from Ethiopia's ancient grain. Ideal for health-conscious consumers.",
-      image: "/placeholder.svg?height=300&width=400",
-      categories: ["Grains", "Health Foods"]
+      description:
+        "Gluten-free, nutrient-rich flour made from Ethiopia's ancient grain. Ideal for health-conscious consumers.",
+      image: "/stack-rice-cakes-bowl-flour-wooden-board.jpg",
+      categories: ["Grains", "Health Foods"],
     },
     {
       name: "Ethiopian Spice Blends",
-      description: "Authentic spice mixes including Berbere and Mitmita, adding unique flavors to various cuisines.",
+      description:
+        "Authentic spice mixes including Berbere and Mitmita, adding unique flavors to various cuisines.",
       image: "/spices-around-spilled-powder.jpg",
-      categories: ["Spices", "Gourmet"]
+      categories: ["Spices", "Gourmet"],
     },
     {
       name: "Leather Goods",
-      description: "High-quality leather products, including bags and accessories, showcasing Ethiopian craftsmanship.",
-      image: "/placeholder.svg?height=300&width=400",
-      categories: ["Fashion", "Accessories"]
-    }
-  ]
+      description:
+        "High-quality leather products, including bags and accessories, showcasing Ethiopian craftsmanship.",
+      image: "/2148739385.jpg",
+      categories: ["Fashion", "Accessories"],
+    },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -49,8 +56,12 @@ export default function Products() {
       <main className="flex-grow">
         <section className="bg-[#1a365d] text-white py-20">
           <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Premium Export Products</h1>
-            <p className="text-xl">Discover the finest goods Ethiopia has to offer</p>
+            <h1 className="text-4xl font-bold mb-4">
+              Our Premium Export Products
+            </h1>
+            <p className="text-xl">
+              Discover the finest goods Ethiopia has to offer
+            </p>
           </div>
         </section>
         <section className="py-20">
@@ -58,12 +69,20 @@ export default function Products() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product, index) => (
                 <Card key={index} className="overflow-hidden">
-                  <Image src={product.image} alt={product.name} width={400} height={300} className="w-full h-48 object-cover" />
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={400}
+                    height={300}
+                    className="w-full h-48 object-cover"
+                  />
                   <CardHeader>
                     <CardTitle>{product.name}</CardTitle>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {product.categories.map((category, i) => (
-                        <Badge key={i} variant="secondary">{category}</Badge>
+                        <Badge key={i} variant="secondary">
+                          {category}
+                        </Badge>
                       ))}
                     </div>
                   </CardHeader>
@@ -77,19 +96,40 @@ export default function Products() {
         </section>
         <section className="bg-gray-100 py-20">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-8">Why Choose Our Products?</h2>
+            <h2 className="text-3xl font-bold mb-8">
+              Why Choose Our Products?
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Authentic Quality</h3>
-                <p>Each product is carefully selected to represent the best of Ethiopian craftsmanship and natural resources.</p>
+              <div className="flex flex-col items-center">
+                <Award className="h-12 w-12 text-[#1a365d] mb-4" />{" "}
+                {/* Authentic Quality Icon */}
+                <h3 className="text-xl font-semibold mb-4">
+                  Authentic Quality
+                </h3>
+                <p>
+                  Each product is carefully selected to represent the best of
+                  Ethiopian craftsmanship and natural resources.
+                </p>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Sustainable Sourcing</h3>
-                <p>We prioritize environmentally friendly and socially responsible sourcing practices.</p>
+              <div className="flex flex-col items-center">
+                <Leaf className="h-12 w-12 text-[#1a365d] mb-4" />{" "}
+                {/* Sustainable Sourcing Icon */}
+                <h3 className="text-xl font-semibold mb-4">
+                  Sustainable Sourcing
+                </h3>
+                <p>
+                  We prioritize environmentally friendly and socially
+                  responsible sourcing practices.
+                </p>
               </div>
-              <div>
+              <div className="flex flex-col items-center">
+                <Globe className="h-12 w-12 text-[#1a365d] mb-4" />{" "}
+                {/* Global Standards Icon */}
                 <h3 className="text-xl font-semibold mb-4">Global Standards</h3>
-                <p>Our products meet international quality standards, ensuring satisfaction for global consumers.</p>
+                <p>
+                  Our products meet international quality standards, ensuring
+                  satisfaction for global consumers.
+                </p>
               </div>
             </div>
           </div>
@@ -101,6 +141,5 @@ export default function Products() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
