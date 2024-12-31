@@ -1,8 +1,8 @@
-import { Header } from '../components/header'
+import { Header } from "../components/header"
 import { Button } from "@/components/ui/button"
-import Link from 'next/link'
-import Image from 'next/image'
-import { ArrowRight, Globe, BarChartIcon as ChartBar, Handshake, Users, ShieldCheck, Star, TrendingUp } from 'lucide-react'
+import Link from "next/link"
+import Image from "next/image"
+import { ArrowRight, Globe , Handshake, Users, ShieldCheck, Star, TrendingUp } from "lucide-react"
 
 export default function Home() {
   return (
@@ -153,11 +153,11 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Testimonials</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="mb-4 italic">"Sultan General Trading has been an excellent partner for our coffee shop. Their Ethiopian coffee beans are of exceptional quality, and their service is top-notch."</p>
+                <p className="mb-4 italic">&quot;Sultan General Trading has been an excellent partner for our coffee shop. Their Ethiopian coffee beans are of exceptional quality, and their service is top-notch.&quot;</p>
                 <p className="font-semibold">- John Doe, Owner of Brew Haven</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="mb-4 italic">"We&apos;ve been importing textiles from Sultan General Trading for years. Their handwoven fabrics are truly unique and always meet our high standards."</p>
+                <p className="mb-4 italic">&quot;We&apos;ve been importing textiles from Sultan General Trading for years. Their handwoven fabrics are truly unique and always meet our high standards.&quot;</p>
                 <p className="font-semibold">- Jane Smith, Fashion Designer</p>
               </div>
             </div>
