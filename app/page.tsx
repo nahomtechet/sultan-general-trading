@@ -71,7 +71,7 @@ export default function Home() {
                 <Image src="/placeholder.svg?height=200&width=300" alt="Ethiopian Coffee" width={300} height={200} className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">Premium Ethiopian Coffee</h3>
-                  <p>Aromatic and rich, sourced from Ethiopia's finest coffee regions</p>
+                  <p>Aromatic and rich, sourced from Ethiopia&apos;s finest coffee regions</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -157,7 +157,7 @@ export default function Home() {
                 <p className="font-semibold">- John Doe, Owner of Brew Haven</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <p className="mb-4 italic">"We've been importing textiles from Sultan General Trading for years. Their handwoven fabrics are truly unique and always meet our high standards."</p>
+                <p className="mb-4 italic">"We&apos;ve been importing textiles from Sultan General Trading for years. Their handwoven fabrics are truly unique and always meet our high standards."</p>
                 <p className="font-semibold">- Jane Smith, Fashion Designer</p>
               </div>
             </div>

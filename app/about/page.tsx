@@ -30,7 +30,7 @@ export default function About() {
                   Founded in Addis Ababa, Ethiopia, Sultan General Trading has been at the forefront of international trade for over a decade. Our mission is to bridge markets, cultures, and opportunities across continents.
                 </p>
                 <p className="mb-4">
-                  Led by our visionary CEO, Muktar Mohammed Sultan, we've expanded our reach from local Ethiopian markets to global trade networks, with a special focus on emerging markets in Europe and Africa.
+                  Led by our visionary CEO, Muktar Mohammed Sultan, we&apos;ve expanded our reach from local Ethiopian markets to global trade networks, with a special focus on emerging markets in Europe and Africa.
                 </p>
                 <p>
                   Our team of experts brings diverse skills in logistics, market research, business development, and cultural liaison to ensure smooth and successful international partnerships.
