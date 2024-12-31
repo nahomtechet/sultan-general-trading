@@ -8,13 +8,13 @@ export default function Products() {
     {
       name: "Premium Ethiopian Coffee",
       description: "Aromatic and rich, sourced from Ethiopia's finest coffee regions. Available in various roasts and grinds.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/coffee.png",
       categories: ["Beverages", "Gourmet"]
     },
     {
       name: "Organic Honey",
       description: "Pure, natural honey from the pristine highlands of Ethiopia. Known for its unique flavor and health benefits.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/honey.jpg",
       categories: ["Natural Products", "Health Foods"]
     },
     {
@@ -32,7 +32,7 @@ export default function Products() {
     {
       name: "Ethiopian Spice Blends",
       description: "Authentic spice mixes including Berbere and Mitmita, adding unique flavors to various cuisines.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/spices-around-spilled-powder.jpg",
       categories: ["Spices", "Gourmet"]
     },
     {

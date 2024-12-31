@@ -68,14 +68,14 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Featured Products</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <Image src="/placeholder.svg?height=200&width=300" alt="Ethiopian Coffee" width={300} height={200} className="w-full h-48 object-cover" />
+                <Image src="/coffee.png" alt="Ethiopian Coffee" width={300} height={200} className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">Premium Ethiopian Coffee</h3>
                   <p>Aromatic and rich, sourced from Ethiopia&apos;s finest coffee regions</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <Image src="/placeholder.svg?height=200&width=300" alt="Organic Honey" width={300} height={200} className="w-full h-48 object-cover" />
+                <Image src="/honey.jpg" alt="Organic Honey" width={300} height={200} className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">Organic Honey</h3>
                   <p>Pure, natural honey from the pristine highlands of Ethiopia</p>
