@@ -2,7 +2,7 @@ import { Header } from '../components/header'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Globe, BarChartIcon as ChartBar, Handshake, Users, Briefcase, ShieldCheck, Package, Star, TrendingUp } from 'lucide-react'
+import { ArrowRight, Globe, BarChartIcon as ChartBar, Handshake, Users, ShieldCheck, Star, TrendingUp } from 'lucide-react'
 
 export default function Home() {
   return (
