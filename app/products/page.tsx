@@ -94,6 +94,32 @@ export default function Products() {
             </div>
           </div>
         </section>
+        
+<section className="bg-white py-20">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-8">
+              Watch Our Process
+            </h2>
+            <p className="text-center text-xl mb-6">
+              Explore how we ensure quality in exporting premium animal products like meat, milk, and livestock.
+            </p>
+            <div className="flex justify-center">
+              <video
+                className="w-full md:w-2/3 rounded-lg shadow-lg"
+                controls
+                poster="/IMG-20241231-WA0027.jpg" // Replace with your video thumbnail
+              >
+                <source src="/VID-20241231-WA0076.mp4" type="video/mp4" />
+                <p>
+                  Your browser does not support the video tag. You can{" "}
+                  <a href="/your-video-file.mp4" className="text-blue-500">
+                    download the video here
+                  </a>.
+                </p>
+              </video>
+            </div>
+          </div>
+        </section>
         <section className="bg-gray-100 py-20">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-8">
