@@ -21,8 +21,21 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-[#1a365d] text-white py-20">
-          <div className="container mx-auto px-6 text-center">
+        <section className="relative h-screen flex items-center justify-center">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/WhatsApp Video 2024-12-31 at 12.55.21 AM.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="absolute inset-0 bg-[#1a365d] opacity-80"></div>
+
+          <div className="relative z-10 text-center text-white px-6">
             <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
               Welcome to Sultan General Trading
             </h1>
