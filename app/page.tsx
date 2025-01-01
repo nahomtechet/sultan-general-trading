@@ -35,20 +35,20 @@ export default function Home() {
 
           <div className="absolute inset-0 bg-[#1a365d] opacity-80"></div>
 
-          <div className="relative z-10 text-center text-white px-6">
-            <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
-              Welcome to Sultan General Trading
-            </h1>
-            <p className="text-xl mb-8 animate-fade-in-up">
-              Your trusted partner in exporting high-quality Ethiopian products
-            </p>
-            <Button
-              asChild
-              className="animate-bounce bg-white text-[#1a365d] hover:bg-gray-100"
-            >
-              <Link href="/products">Explore Our Products</Link>
-            </Button>
-          </div>
+            <div className="relative z-10 text-center text-white px-6">
+              <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
+                Welcome to Sultan General Trading
+              </h1>
+              <p className="text-xl mb-8 animate-fade-in-up">
+                Your trusted partner in exporting high-quality Ethiopian products
+              </p>
+              <Button
+                asChild
+                className="animate-bounce bg-white text-[#1a365d] hover:bg-gray-100"
+              >
+                <Link href="/products">Explore Our Products</Link>
+              </Button>
+            </div>
         </section>
 
         <section className="py-20">
