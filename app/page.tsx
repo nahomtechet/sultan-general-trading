@@ -22,7 +22,7 @@ export default function Home() {
   <Header /> 
 
       {/* Background Video */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-10">
         <video
           autoPlay
           loop
