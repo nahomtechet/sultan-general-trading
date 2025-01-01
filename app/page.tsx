@@ -29,26 +29,29 @@ export default function Home() {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="/WhatsApp Video 2024-12-31 at 12.55.21 AM.mp4" type="video/mp4" />
+            <source
+              src="/WhatsApp Video 2024-12-31 at 12.55.21 AM.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
 
           <div className="absolute inset-0 bg-[#1a365d] opacity-80"></div>
 
-            <div className="relative z-10 text-center text-white px-6">
-              <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
-                Welcome to Sultan General Trading
-              </h1>
-              <p className="text-xl mb-8 animate-fade-in-up">
-                Your trusted partner in exporting high-quality Ethiopian products
-              </p>
-              <Button
-                asChild
-                className="animate-bounce bg-white text-[#1a365d] hover:bg-gray-100"
-              >
-                <Link href="/products">Explore Our Products</Link>
-              </Button>
-            </div>
+          <div className="relative z-10 text-center text-white px-6">
+            <h1 className="text-5xl font-bold mb-4 animate-fade-in-down">
+              Welcome to Sultan General Trading
+            </h1>
+            <p className="text-xl mb-8 animate-fade-in-up">
+              Your trusted partner in exporting high-quality Ethiopian products
+            </p>
+            <Button
+              asChild
+              className="animate-bounce bg-white text-[#1a365d] hover:bg-gray-100"
+            >
+              <Link href="/products">Explore Our Products</Link>
+            </Button>
+          </div>
         </section>
 
         <section className="py-20">
@@ -180,23 +183,69 @@ export default function Home() {
               </div>
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <Image
-                  src="/carpets-market-morocco.jpg"
-                  alt="Handwoven Textiles"
+                  src="/image.png"
+                  alt="Goat Export"
                   width={300}
                   height={200}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">
-                    Handwoven Textiles
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-2">Goat Export</h3>
                   <p>
-                    Exquisite, traditionally crafted fabrics showcasing
-                    Ethiopian artistry
+                    Premium Ethiopian goats, raised in natural environments,
+                    perfect for various culinary applications.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <Image
+                  src="/camel2.jpeg"
+                  alt="Camel Export"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">Camel Export</h3>
+                  <p>
+                  Robust and healthy camels from Ethiopia&apos;s arid regions, suitable for various purposes including meat and milk production.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <Image
+                  src="/ox.jpeg"
+                  alt="Ox Export"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">Ox Export</h3>
+                  <p>
+                  High-quality, ethically raised ox for international markets, known for their superior meat quality.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <Image
+                  src="/sheep.jpeg"
+                  alt="Sheep Export"
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">Sheep Export</h3>
+                  <p>
+                    Premium Ethiopian goats, raised in natural environments,
+                    perfect for various culinary applications.
                   </p>
                 </div>
               </div>
             </div>
+
+
             <div className="text-center mt-12">
               <Button asChild>
                 <Link href="/products">View All Products</Link>

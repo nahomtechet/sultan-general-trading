@@ -48,6 +48,30 @@ export default function Products() {
       image: "/2148739385.jpg",
       categories: ["Fashion", "Accessories"],
     },
+    {
+      name: "Ox Export",
+      description: "High-quality, ethically raised ox for international markets, known for their superior meat quality.",
+      image: "/ox.jpeg?height=300&width=400",
+      categories: ["Livestock", "Agriculture"]
+    },
+    {
+      name: "Goat Export",
+      description: "Premium Ethiopian goats, raised in natural environments, perfect for various culinary applications.",
+      image: "/image.png",
+      categories: ["Livestock", "Agriculture"]
+    },
+    {
+      name: "Sheep Export",
+      description: "Ethically raised sheep from Ethiopia's highlands, known for their tender and flavorful meat.",
+      image: "/sheep.jpeg?height=300&width=400",
+      categories: ["Livestock", "Agriculture"]
+    },
+    {
+      name: "Camel Export",
+      description: "Robust and healthy camels from Ethiopia's arid regions, suitable for various purposes including meat and milk production.",
+      image: "/camel2.jpeg",
+      categories: ["Livestock", "Agriculture"]
+    }
   ];
 
   return (
