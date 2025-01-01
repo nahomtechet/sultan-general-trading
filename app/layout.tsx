@@ -1,12 +1,11 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { defaultMetadata } from '../lib/metadata'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Sultan General Trading',
-  description: 'International import/export services based in Addis Ababa, Ethiopia',
-}
+export const metadata = defaultMetadata
+
 
 export default function RootLayout({
   children,

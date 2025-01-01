@@ -3,7 +3,17 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Leaf, Globe } from "lucide-react";
+import { Metadata } from 'next'
 
+
+export const metadata: Metadata = {
+  title: 'Our Products',
+  description: 'Explore our range of premium Ethiopian exports including coffee, honey, textiles, and livestock.',
+  openGraph: {
+    title: 'Premium Ethiopian Products - Sultan General Trading',
+    description: 'Discover our high-quality Ethiopian exports for international markets.',
+  },
+}
 export default function Products() {
   const products = [
     {

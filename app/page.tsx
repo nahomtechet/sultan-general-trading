@@ -2,6 +2,7 @@ import { Header } from "../components/header";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from 'next'
 import {
   ArrowRight,
   Globe,
@@ -15,7 +16,14 @@ import {
   Truck,
   CheckCircle,
 } from "lucide-react";
-
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Sultan General Trading - Your gateway to premium Ethiopian exports including coffee, honey, textiles, and livestock.',
+  openGraph: {
+    title: 'Sultan General Trading - Premium Ethiopian Exports',
+    description: 'Discover high-quality Ethiopian products and livestock for international markets.',
+  },
+}
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
