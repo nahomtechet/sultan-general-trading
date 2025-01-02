@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CheckCircle, Lightbulb, Users } from "lucide-react";
 
 export default function About() {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -59,7 +60,7 @@ export default function About() {
               <div className="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-105">
                 <div className="flex items-center mb-4">
                   <CheckCircle className="h-12 w-12 text-[#1a365d] mr-4" />{" "}
-                  {/* Integrity Icon */}
+                 
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Integrity</h3>
                     <p>
@@ -73,7 +74,7 @@ export default function About() {
               <div className="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-105">
                 <div className="flex items-center mb-4">
                   <Lightbulb className="h-12 w-12 text-[#1a365d] mr-4" />{" "}
-                  {/* Innovation Icon */}
+                
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Innovation</h3>
                     <p>
@@ -104,7 +105,7 @@ export default function About() {
       </main>
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Sultan General Trading. All rights reserved.</p>
+          <p>&copy; {currentYear} Sultan General Trading. All rights reserved.</p>
         </div>
       </footer>
     </div>

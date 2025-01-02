@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Truck, Globe, BarChartIcon as ChartBar, Package, Clock, ShieldCheck } from 'lucide-react'
 
 export default function Logistics() {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -94,7 +95,7 @@ export default function Logistics() {
       </main>
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Sultan General Trading. All rights reserved.</p>
+          <p>&copy; {currentYear} Sultan General Trading. All rights reserved.</p>
         </div>
       </footer>
     </div>

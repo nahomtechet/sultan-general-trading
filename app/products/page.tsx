@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   },
 }
 export default function Products() {
+  const currentYear = new Date().getFullYear();
   const products = [
     {
       name: "Premium Ethiopian Frankincense",
@@ -203,7 +204,7 @@ export default function Products() {
       </main>
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2024 Sultan General Trading. All rights reserved.</p>
+          <p>&copy; {currentYear} Sultan General Trading. All rights reserved.</p>
         </div>
       </footer>
     </div>
