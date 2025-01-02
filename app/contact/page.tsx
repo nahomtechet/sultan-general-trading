@@ -62,14 +62,18 @@ export default function Contact() {
                   <div className="flex items-center">
                     <MapPin className="h-6 w-6 text-blue-600 mr-2" />
                     <p>
-                      Bole, Sub-city, Woreda 1, Kebele 02, H.N-00, Addis Ababa,
-                      Ethiopia
+                      Najip tower,3rd Floor, Room 302, Bole wollo Sefer,Addis
+                      Ababa,Ethiopia
                     </p>
                   </div>
-                    <div className="flex items-center">
+                  <div className="flex items-center">
+                    <Link
+                      href="tel:+251915042639"
+                    >
                     <Phone className="h-6 w-6 text-blue-600 mr-2" />
+                    </Link>
                     <p>+251915042639</p>
-                    </div>
+                  </div>
                   <div className="flex items-center">
                     <Link
                       href="mailto:mukhtarmahamud1@gmail.com"
