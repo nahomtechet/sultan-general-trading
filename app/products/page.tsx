@@ -17,6 +17,12 @@ export const metadata: Metadata = {
 export default function Products() {
   const products = [
     {
+      name: "Premium Ethiopian Frankincense",
+      description: "Pure, aromatic Frankincense resin sourced from the finest Boswellia trees in Ethiopia. Known for its distinct fragrance and traditional uses.",
+      image: "/frankincense.jpeg",
+      categories: ["Natural Products", "Aromatics", "Traditional"]
+    },
+    {
       name: "Premium Ethiopian Coffee",
       description:
         "Aromatic and rich, sourced from Ethiopia's finest coffee regions. Available in various roasts and grinds.",
