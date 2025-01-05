@@ -1,10 +1,20 @@
 import { Header } from "../../components/header";
 import Image from "next/image";
 import { CheckCircle, Lightbulb, Users } from "lucide-react";
+import Head from "next/head";
 
 export default function About() {
   const currentYear = new Date().getFullYear();
   return (
+    <> 
+    <Head>
+        <title>About Us | Sultan General Trading</title>
+        <meta
+          name="description"
+          content="Learn more about Sultan General Trading, your trusted partner for quality trading solutions."
+        />
+        <link rel="canonical" href="https://sultangeneraltrading.com/about" />
+      </Head>
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
@@ -109,5 +119,6 @@ export default function About() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

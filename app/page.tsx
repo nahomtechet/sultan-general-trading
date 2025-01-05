@@ -2,7 +2,7 @@ import { Header } from "../components/header";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { Metadata } from 'next'
+import { Metadata } from "next";
 import {
   ArrowRight,
   Globe,
@@ -16,21 +16,40 @@ import {
   Truck,
   CheckCircle,
 } from "lucide-react";
+import StructuredData from "@/components/StructuredData";
+
 export const metadata: Metadata = {
-  title: 'Home',
-  description: 'Sultan General Trading - Your gateway to premium Ethiopian exports including coffee, honey, textiles, and livestock.',
+  title: "Home",
+  description:
+    "Sultan General Trading - Your gateway to premium Ethiopian exports including coffee, honey, textiles, and livestock.",
   openGraph: {
-    title: 'Sultan General Trading - Premium Ethiopian Exports',
-    description: 'Discover high-quality Ethiopian products and livestock for international markets.',
+    title: "Sultan General Trading - Premium Ethiopian Exports",
+    description:
+      "Discover high-quality Ethiopian products and livestock for international markets.",
   },
-}
+};
 export default function Home() {
   const currentYear = new Date().getFullYear();
-  return (
- 
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Sultan General Trading",
+    url: "https://sultangeneraltrading.com",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://sultangeneraltrading.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  return (
     <div className="min-h-screen flex flex-col">
-      <meta name="google-site-verification" content="oZP28VzYXPWpCyripdH5Dxm-Jfr5cWTJAHlqIaM77JE" />
+      <StructuredData data={schemaData} />
+      <meta
+        name="google-site-verification"
+        content="oZP28VzYXPWpCyripdH5Dxm-Jfr5cWTJAHlqIaM77JE"
+      />
       <Header />
       <main className="flex-grow">
         <section className="relative h-screen flex items-center justify-center">
@@ -220,7 +239,9 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">Camel Export</h3>
                   <p>
-                  Robust and healthy camels from Ethiopia&apos;s arid regions, suitable for various purposes including meat and milk production.
+                    Robust and healthy camels from Ethiopia&apos;s arid regions,
+                    suitable for various purposes including meat and milk
+                    production.
                   </p>
                 </div>
               </div>
@@ -235,7 +256,8 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">Ox Export</h3>
                   <p>
-                  High-quality, ethically raised ox for international markets, known for their superior meat quality.
+                    High-quality, ethically raised ox for international markets,
+                    known for their superior meat quality.
                   </p>
                 </div>
               </div>
@@ -256,7 +278,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
 
             <div className="text-center mt-12">
               <Button asChild>
@@ -424,11 +445,11 @@ export default function Home() {
       </main>
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-6 text-center">
-          <p>&copy; {currentYear} Sultan General Trading. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Sultan General Trading. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
-    
-    
   );
 }
