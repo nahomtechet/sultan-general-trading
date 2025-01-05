@@ -27,7 +27,10 @@ export const metadata: Metadata = {
 export default function Home() {
   const currentYear = new Date().getFullYear();
   return (
+ 
+
     <div className="min-h-screen flex flex-col">
+      <meta name="google-site-verification" content="oZP28VzYXPWpCyripdH5Dxm-Jfr5cWTJAHlqIaM77JE" />
       <Header />
       <main className="flex-grow">
         <section className="relative h-screen flex items-center justify-center">
@@ -425,5 +428,7 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    
+    
   );
 }
