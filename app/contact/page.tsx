@@ -124,7 +124,7 @@ export default function ContactPage() {
                 Get in Touch
               </h1>
               <p className="text-xl opacity-90 mb-8">
-                Have questions about our products or services? We're here to
+                Have questions about our products or services? We&apos;re here to
                 help you.
               </p>
               <div className="flex justify-center space-x-4">
