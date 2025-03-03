@@ -74,7 +74,7 @@ export default function ContactPage() {
           message: responseData.message || "Failed to send message. Please try again.",
         })
       }
-    } catch (error) {
+    } catch {
       setFormStatus({
         type: "error",
         message: "An unexpected error occurred. Please try again later.",
